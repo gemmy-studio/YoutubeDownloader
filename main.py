@@ -9,9 +9,9 @@ def main():
     st.set_page_config(page_title="Youtube 동영상 다운로더", page_icon="favicon.ico",
                        layout="centered", initial_sidebar_state="auto", menu_items=None)
 
-    button = """
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="woojae" data-description="Support me on Buy me a coffee!" data-message="방문해주셔서 감사합니다 :)" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-    """
+    # button = """
+    # <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="woojae" data-description="Support me on Buy me a coffee!" data-message="방문해주셔서 감사합니다 :)" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    # """
 
     st.title('Youtube 동영상 다운로더')
     multi = '''
@@ -85,20 +85,20 @@ def main():
                         st.download_button(
                             '다운로드', audio_bytes, file_name=file_name, mime='audio/wav')
 
-    html(button, height=600, width=400)
+    # html(button, height=600, width=400)
 
-    st.markdown(
-        """
-        <style>
-            iframe[width="400"] {
-                position: fixed;
-                bottom: 60px;
-                right: 40px;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
+    # st.markdown(
+    #     """
+    #     <style>
+    #         iframe[width="400"] {
+    #             position: fixed;
+    #             bottom: 60px;
+    #             right: 40px;
+    #         }
+    #     </style>
+    #     """,
+    #     unsafe_allow_html=True,
+    # )
 
 
 if __name__ == '__main__':
